@@ -1,0 +1,18 @@
+Public Class Form1
+Dim intMinimum As Integer
+Dim intMaximum As Integer
+Dim squares As Integer
+Private Sub Button1_Click(sender As Object, e As EventArgs) Handles
+Button1.Click
+intMinimum = Val(TextBox1.Text)
+intMaximum = Val(TextBox2.Text)
+For squares = intMinimum To intMaximum
+TextBox3.Text &= "The square of " & Str(squares) & " is " &
+Str(squares * squares) & "." & vbNewLine
+Next squares
+End Sub
+Private Sub Button2_Click(sender As Object, e As EventArgs) Handles
+Button2.Click
+Me.Close()
+End Sub
+End Class
